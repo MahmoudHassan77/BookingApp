@@ -1,0 +1,21 @@
+.count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.btns{
+    display: flex;
+    gap: 5px;
+}
+
+.btns button{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #0071c2;
+}
+
+.icon{
+    color: #0071c2;
+}

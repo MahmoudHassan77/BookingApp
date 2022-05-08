@@ -1,0 +1,35 @@
+@import '../../styles/common';
+
+.navbar{
+    height: 70px;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarContainer{
+    color: $text-color;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 1000;
+    font-size: larger;
+}
+
+.navButton, .navSpan{
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navButton{
+    padding: 8px 15px;
+    color: #0071c2;
+    font-weight: bold;
+    outline: none;
+}
