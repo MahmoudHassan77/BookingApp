@@ -10,8 +10,8 @@
 
 .headerContainer{
     width: 100%;
-    max-width: 1024px;
-    margin: 20px 0px 100px 0px;
+    max-width: 1110px;
+    margin: 15px 0px 80px 0px;
 }
 
 .headerList{
@@ -38,11 +38,12 @@
 }
 
 .headerTitle{
-
+font-size: 45px;
 }
 
 .headerDesc{
     margin: 20px 0px;
+    font-size: 25px;
 }
 
 .headerBtn{
@@ -69,7 +70,7 @@
     position: absolute;
     bottom: -25px;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1110px;
 }
 
 .headerIcon{

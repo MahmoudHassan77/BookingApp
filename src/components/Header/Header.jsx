@@ -16,6 +16,7 @@ import { format } from "date-fns";
 import React, { useState } from "react";
 import style from "./Header.module.scss";
 import Counter from "../Counter/Counter";
+import HeaderNav from "../HeaderNav/HeaderNav";
 
 const Header = () => {
   const [date, setDate] = useState([
@@ -43,26 +44,11 @@ const Header = () => {
     <div className={style.header}>
       <div className={style.headerContainer}>
         <div className={style.headerList}>
-          <div className={`${style.headerListItem} ${style.Active}`}>
-            <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
-          </div>
-          <div className={style.headerListItem}>
-            <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
-          </div>
-          <div className={style.headerListItem}>
-            <FontAwesomeIcon icon={faCarRear} />
-            <span>Car Rentals</span>
-          </div>
-          <div className={style.headerListItem}>
-            <FontAwesomeIcon icon={faAtom} />
-            <span>Attractions</span>
-          </div>
-          <div className={style.headerListItem}>
-            <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport Taxis</span>
-          </div>
+          <HeaderNav title="Stays" icon={faBed} isActive={true}/>
+          <HeaderNav title="Flights" icon={faPlane} />
+          <HeaderNav title="Car Rentals" icon={faCarRear} />
+          <HeaderNav title="Attractions" icon={faAtom} />
+          <HeaderNav title="Airport Taxis" icon={faTaxi} />
         </div>
         <h1 className={style.headerTitle}>
           A lifetime of discounts? It's Genius.
